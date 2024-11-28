@@ -17,15 +17,14 @@ A Flask-based event management application that allows users to create events, R
 1. Clone the repo:
 
     ```bash
-    git clone https://github.com/username/Event-Management.git
+    git clone https://github.com/rdx40/Event-Management.git
     ```
 
 2. Set up a virtual environment:
 
     ```bash
     python3 -m venv .pyvenv
-    source .pyvenv/bin/activate  # On Linux or macOS
-    .pyvenv\Scripts\activate     # On Windows
+    source .pyvenv/bin/activate
     ```
 
 3. Run/Create a PostgreSQL database. Create a db named `flask_event_system`, then modify the database URI in `app.py` and in `migrations/alembic.ini`.
@@ -41,7 +40,7 @@ A Flask-based event management application that allows users to create events, R
 5. Then just run the Python app:
 
     ```bash
-    flask run
+    python app.py
     ```
 
 6. In order to try out the admin features, you'll have to modify the `role` column for your user to `admin` in PostgreSQL or pgAdmin:
